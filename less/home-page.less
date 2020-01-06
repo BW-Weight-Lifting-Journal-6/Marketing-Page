@@ -5,15 +5,28 @@
       // margin:4%;
     }  
 
+    @media @tablet {
+      max-width:100%;
+      // align-self: center;
+      // margin:4%;
+    }  
+
   header{
     width:100%;
     .displayflex(space-between, center);
     // border-bottom: 3px dashed @navigation-border;
-     padding:2% 0;
+     padding:2%;
      align-items: center;
      background-color: @header-bg;
 
     @media @mobile {
+      flex-direction:column;
+      max-width: 100%;
+      .displayflex(space-between, center);
+   
+    }
+
+    @media @tablet {
       flex-direction:column;
       max-width: 100%;
       .displayflex(space-between, center);
@@ -25,9 +38,16 @@
   .top-text{
     .displayflex(space-between,flex-start);
     flex-direction: column;
-    padding: 30px 0;
-    border-bottom: 2px dashed @navigation-border;
+    padding: 20px 0;
+    //border-bottom: 2px dashed @navigation-border;
     @media @mobile {
+      flex-direction: column;
+      align-content: center;
+      padding:0 5%;
+      // width:90%; 
+    } 
+
+    @media @tablet {
       flex-direction: column;
       align-content: center;
       padding:0 5%;
@@ -82,7 +102,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    //  border-bottom: 2px dashed @navigation-border;
     @media @mobile {
       display:flex;
       flex-direction: column-reverse;
@@ -129,10 +149,12 @@
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    //padding-top: 30px;
+    //border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    //height: 30%;
+    width: 100%;
     
   
    

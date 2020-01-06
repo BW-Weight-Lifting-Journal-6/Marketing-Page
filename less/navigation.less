@@ -5,22 +5,29 @@ nav{
     width:50%;
     .displayflex(space-evenly, center);
 
+    @media @tablet {
+        max-width: 100%;
+        width:100%;
+        .displayflex(space-evenly, center);
+        padding:2% 0 0 0;
+    }
+
     @media @mobile {
         max-width: 100%;
         width:100%;
         .displayflex(space-evenly, center);
         padding:2% 0 0 0;
     }
+
+
     
     
 
 }
 
 a{
-    // padding:2%;
     font-size:1.6rem;
     color: black;
     text-decoration: none;
-    // font-weight: bold;
 
 }
