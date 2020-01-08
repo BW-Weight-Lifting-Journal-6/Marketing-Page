@@ -46,14 +46,14 @@
     @media @mobile {
       flex-direction: column;
       align-content: center;
-      padding:0 5%;
+      padding:20px 0 5% 5%;
       // width:90%; 
     } 
 
     @media @tablet {
       flex-direction: column;
       align-content: center;
-      padding:0 5%;
+      padding:5% 0 5% 5%;
       // width:90%; 
     } 
   }
@@ -171,14 +171,15 @@
       max-width: 100%;
       // display: inline-block;
      
-      padding:4% 5%;
+     // padding:4% 5%;
    
 
     }
 
-    .destination {
-      width: 28%;
+    .cta {
+      width: 40%;
       margin-bottom: 30px;
+      
       @media @mobile {
         width: 100%;
         
@@ -190,20 +191,54 @@
         // align-self: center;
         // background-color:red;
         // padding:0 5%;
+
       }
+
+      @media @tablet {
+        width: 60%;
+        
+        display: flex;
+        flex-direction: column;
+        max-width:100%;
+        padding:0 5%;
+
+      } 
+
+      
     }
   }
   .btn{
     .buttonbox(@button-bg, @white, 15px, 100%, center);   
   }
+  #about{
+    padding-top: 5%;
 
+    @media @mobile {
+      flex-direction: column;
+      align-content: center;
+      padding:0 5%;
+      // width:90%; 
+    } 
+
+    @media @tablet {
+      flex-direction: column;
+      align-content: center;
+      padding:0 5%;
+      // width:90%; 
+    } 
+
+
+
+  }
   .about {
    display: flex;
   //  max-width: 100%;
   //   margin-bottom: 5%;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5% 0;
+    padding-top: 10%;
+
+    
     
 
     .team{
@@ -213,14 +248,23 @@
       // flex: 0 0 33.33%
       // flex: 1 0 21%; /* explanation below */
      // margin: 5px;
-        margin: 2% 0;
+        //padding: 5% 0;
 
       max-width: 100%;
       width: 40%;
 
+      .circle{
+        border-radius: 50%;
+      }
+
+
+
      .teamTitle{
        display: flex;
        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 10% 0;
 
 
      }

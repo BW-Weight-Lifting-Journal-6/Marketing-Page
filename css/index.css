@@ -256,14 +256,14 @@ nav a {
   .home .top-text {
     flex-direction: column;
     align-content: center;
-    padding: 0 5%;
+    padding: 20px 0 5% 5%;
   }
 }
 @media (max-width: 800px) {
   .home .top-text {
     flex-direction: column;
     align-content: center;
-    padding: 0 5%;
+    padding: 5% 0 5% 5%;
   }
 }
 .home .content-section {
@@ -358,19 +358,27 @@ nav a {
     justify-content: space-evenly;
     width: 100%;
     max-width: 100%;
-    padding: 4% 5%;
   }
 }
-.home .content-pick .destination {
-  width: 28%;
+.home .content-pick .cta {
+  width: 40%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .home .content-pick .destination {
+  .home .content-pick .cta {
     width: 100%;
     display: flex;
     flex-direction: column;
     max-width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .home .content-pick .cta {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 5%;
   }
 }
 .home .btn {
@@ -382,21 +390,43 @@ nav a {
   padding: 15px 30px;
   font-size: 3rem;
 }
+.home #about {
+  padding-top: 5%;
+}
+@media (max-width: 500px) {
+  .home #about {
+    flex-direction: column;
+    align-content: center;
+    padding: 0 5%;
+  }
+}
+@media (max-width: 800px) {
+  .home #about {
+    flex-direction: column;
+    align-content: center;
+    padding: 0 5%;
+  }
+}
 .home .about {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 5% 0;
+  padding-top: 10%;
 }
 .home .about .team {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 2% 0;
   max-width: 100%;
   width: 40%;
+}
+.home .about .team .circle {
+  border-radius: 50%;
 }
 .home .about .team .teamTitle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0;
 }
