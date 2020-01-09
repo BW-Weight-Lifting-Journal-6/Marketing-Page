@@ -158,6 +158,34 @@
     justify-content: space-between;
     //height: 30%;
     width: 100%;
+
+    margin-bottom: 5%;
+    
+    @media @mobile {
+      flex-direction: column;
+      justify-content: space-evenly;
+      // justify-content: center;
+      // align-item: center;
+      width:100%;
+      max-width: 100%;
+      text-align: center;
+      // display: inline-block;
+     
+     // padding:4% 5%;
+   
+
+    }
+
+  }
+  .content-main {
+    //padding-top: 30px;
+    //border-top: 2px dashed @navigation-border;
+    display: flex;
+    justify-content: space-between;
+    //height: 30%;
+    width: 100%;
+
+    margin-bottom: 10%;
     
   
    
@@ -165,8 +193,8 @@
     @media @mobile {
       flex-direction: column;
       justify-content: space-evenly;
-      // justify-content: center;
-      // align-item: center;
+      justify-content: center;
+      //text-align: center;
       width:100%;
       max-width: 100%;
       // display: inline-block;
@@ -178,35 +206,82 @@
 
     .cta {
       width: 40%;
-      margin-bottom: 30px;
+      max-width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-between;
+     
+
+      p{
+        padding: 10% 0;
+        
+      }
+      @media @tablet {
+        width: 60%;
+        
+        // display: flex;
+        // flex-direction: column;
+        max-width:100%;
+        padding:0 5%;
+
+      } 
       
       @media @mobile {
         width: 100%;
         
         display: flex;
-        flex-direction: column;
-        max-width:100%;
-      //  justify-content: center;
-        // align-content: center;
-        // align-self: center;
-        // background-color:red;
-        // padding:0 5%;
+       // flex-direction: column;
+        //max-width:100%;
+        //justify-content: center;
+        text-align: center;
+        //background-color:red;
+        //padding:0 5%;
 
       }
+    }
 
-      @media @tablet {
-        width: 60%;
-        
+
+
+      .secondImg{
         display: flex;
-        flex-direction: column;
-        max-width:100%;
+        max-width: 100%;
+        width: 60%;
+        //width: 2%;
         padding:0 5%;
-
-      } 
+        justify-content: flex-end;
+    
+        @media @mobile {
+          display: none;
+          visibility: hidden;
+        }
+      }
 
       
     }
-  }
+
+    // .secondImg{
+    //   display: flex;
+    //   max-width: 100%;
+    //   width: 20%;
+  
+    //   @media @mobile {
+    //     display: none;
+    //     visibility: hidden;
+    //   }
+    // }
+
+  
+
+  
+  // .bgimg{
+  //   background-image: url('../img/barbell_small.jpg');
+  //   max-width: 100%;
+  //   width: 100%;
+  //   background-repeat: no-repeat;
+
+  // }
   .btn{
     .buttonbox(@button-bg, @white, 15px, 100%, center);   
   }
