@@ -146,6 +146,9 @@ h2 {
   font-size: 2.8rem;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 2.5rem;
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
@@ -206,12 +209,12 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home {
     max-width: 100%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .home {
     max-width: 100%;
   }
@@ -286,15 +289,6 @@ nav a {
   width: 100%;
   margin-bottom: 10%;
 }
-@media (max-width: 500px) {
-  .home .content-main {
-    flex-direction: column;
-    justify-content: space-evenly;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%;
-  }
-}
 .home .content-main .cta {
   width: 40%;
   max-width: 100%;
@@ -325,14 +319,24 @@ nav a {
     text-align: center;
     padding: 5% 0;
     background-color: #C0C0C0;
+    background-image: url(../img/barbell_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode: overlay;
   }
 }
 .home .content-main .secondImg {
   display: flex;
   max-width: 100%;
   width: 60%;
-  padding: 0 5%;
+  padding: 0 0 0 5%;
   justify-content: flex-end;
+}
+@media (max-width: 800px) {
+  .home .content-main .secondImg {
+    padding: 0 5%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-main .secondImg {
@@ -351,19 +355,20 @@ nav a {
 }
 .home #about {
   padding-top: 5%;
-}
-@media (max-width: 500px) {
-  .home #about {
-    flex-direction: column;
-    align-content: center;
-    padding: 0 5%;
-  }
+  text-align: center;
 }
 @media (max-width: 800px) {
   .home #about {
     flex-direction: column;
     align-content: center;
-    padding: 0 5%;
+    padding: 5% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .home #about {
+    flex-direction: column;
+    align-content: center;
+    padding: 5% 5%;
   }
 }
 .home .about {
@@ -377,7 +382,17 @@ nav a {
   flex-direction: column;
   justify-content: space-evenly;
   max-width: 100%;
-  width: 40%;
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .home .about .team {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .home .about .team {
+    width: 100%;
+  }
 }
 .home .about .team .circle {
   border-radius: 50%;
@@ -385,7 +400,7 @@ nav a {
 .home .about .team .teamTitle {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: space-between;
   padding: 10% 0;
+  text-align: center;
 }
