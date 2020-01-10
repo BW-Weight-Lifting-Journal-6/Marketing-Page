@@ -1,0 +1,90 @@
+.home{
+    
+
+    .contact{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        //align-content: flex-start;
+        align-items: center;
+        background-color:@silver;
+        //background: linear-gradient(#004092, #020202, transparent), url("../img/barbell_small.jpg") no-repeat center;
+        background-image: url(../img/barbell_small.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+
+        
+        // text-align: center;
+
+        padding: 5%;
+        //text
+
+        form{
+
+            max-width: 100%;
+            width: 100;
+           display: flex;
+            flex-direction: column;
+            //justify-content: flex-start;
+            //padding: 1%;
+            font-size: 2.1rem;
+
+            .col-2{
+                max-width: 100%;
+                width: 100%;
+                
+                display: flex;
+
+               // justify-content: center;
+                align-content: center;
+               // flex-direction: column;
+                padding: 5%;
+
+                @media @mobile{
+                    flex-direction: column;
+                   // padding: 8%;
+
+                }
+                label{
+                    padding-right: 2%;
+                    max-width: 100%;
+                    width: 100%;
+                    
+                    @media @mobile{
+                        //flex-direction: column;
+                        padding: 5%;
+    
+                    }
+
+
+                }
+                
+            }
+            
+            .col-1{
+                display: flex;
+
+                justify-content: center;
+                align-content: center;
+               // flex-direction: column;
+                padding: 5%;
+
+                @media @mobile{
+                    flex-direction: column;
+
+                }
+                
+            }
+
+
+        }
+    }
+
+
+
+}

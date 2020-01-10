@@ -297,6 +297,9 @@ nav a {
   justify-content: space-between;
   align-items: space-evenly;
 }
+.home .content-main .cta a {
+  text-decoration: none;
+}
 .home .content-main .cta p {
   padding: 10% 0;
 }
@@ -353,6 +356,9 @@ nav a {
   padding: 15px 30px;
   font-size: 3rem;
 }
+.home .btn:hover {
+  background-color: #212529;
+}
 .home #about {
   padding-top: 5%;
   text-align: center;
@@ -403,4 +409,59 @@ nav a {
   align-items: space-between;
   padding: 10% 0;
   text-align: center;
+}
+.home .contact {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C0C0C0;
+  background-image: url(../img/barbell_small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  padding: 5%;
+}
+.home .contact form {
+  max-width: 100%;
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.1rem;
+}
+.home .contact form .col-2 {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .home .contact form .col-2 {
+    flex-direction: column;
+  }
+}
+.home .contact form .col-2 label {
+  padding-right: 2%;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .contact form .col-2 label {
+    padding: 5%;
+  }
+}
+.home .contact form .col-1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .home .contact form .col-1 {
+    flex-direction: column;
+  }
 }
